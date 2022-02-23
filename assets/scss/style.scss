@@ -1,0 +1,50 @@
+// Project base and component style import
+@import 'base/index';
+
+// Vendor base and component style import
+// @import 'vendor/bootstrap-base';
+
+// @import 'vendor/bootstrap-components';
+
+// Project Specific Components
+@import 'component/index';
+
+// Now other style import
+@import 'layout/index';
+
+@import 'utilities/index';
+
+
+//Sidebar and Main Content Container 
+.main-content{
+    height: 100%;
+    flex-direction: row;
+    
+    // Main Content
+    .main{
+        margin: 40px 35px 0 35px;
+        border: 1px solid gold;
+        height: 100%;
+        width: 100%;
+        flex-grow: 1;
+    }
+}
+
+//Content
+.main-cards{
+    border: 1px solid green;
+}
+
+// Statistics Section
+.main-statistics{
+    border: 1px solid palevioletred;
+    justify-content: space-between;
+    margin: 30px 0;
+    
+    .tabularList{
+        border: 1px solid black;
+    }
+    .statisticData{
+        border: 1px solid darkblue;
+    }
+}

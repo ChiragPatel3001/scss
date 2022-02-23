@@ -1,0 +1,23 @@
+.tabularList{
+    width: 60%;
+    margin-right: 20px;
+    height: 100%;
+
+    .table{
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+
+        .t-head{
+            padding: 10px;
+        }
+
+        .t-data{
+            padding: 10px;
+        }
+        .pdt-name-avatar {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Practice</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/icons/style.css">
+
+</head>
+
+<body>
+    <!-- wrapper Class: Start -->
+    <div class="wrapper d-flex f-dir-column">
+        <!-- Navbar : Start-->
+        <div class="topNav d-flex">
+            <div class="topNav-Container1 d-flex align-items-center">
+                <span class="icon-Logo"></span>
+                <input type="search" id="search" name="search" placeholder="Search for Transaction,Item,etc">
+                <input type="submit">
+            </div>
+            <div class="topNav-Container2 d-flex align-items-center">
+                <span class="icon-Message"></span>
+                <span class="icon-Bell"></span>
+                <figure><img class="avatar" src="../assets/images/johnny-bravo-pin-india.jpg" alt="ProfileIcon">
+                </figure>
+            </div>
+        </div>
+        <!-- Navbar : End-->
+
+
+        <!-- Main Content: Start -->
+        <div class="main-content d-flex">
+            <!-- Sidebar : Start -->
+            <aside class="sidebar d-flex f-dir-column">
+
+                <!-- SideBar Top : Start-->
+                <ul class="sidebar-top li-style-none d-flex f-dir-column">
+                    <li class="icon-Grid"></li>
+                    <li class="icon-cart"></li>
+                    <li class="icon-File"></li>
+                    <li class="icon-Settings"></li>
+                </ul>
+                <!-- SideBar Top : End-->
+
+
+                <!-- SideBar Bottom: Start -->
+                <ul class="sidebar-bottom li-style-none d-flex f-dir-column">
+                    <li class="icon-Error"></li>
+                    <li class="icon-Exit"></li>
+                </ul>
+                <!-- SideBar Bottom: End -->
+
+            </aside>
+            <!-- Sidebar : End -->
+
+            <!-- Main Section : Start -->
+            <main class="main d-flex f-dir-column">
+
+                <!-- cards Section : Start-->
+                <section class="main-cards d-flex f-dir-column">
+                    <div class="dashboard-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                    <div class="cards d-flex">
+                        <div class="card card1"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card card4"></div>
+                    </div>
+                </section>
+                <!-- cards Section : End-->
+
+
+                <!-- table section : Start-->
+                <section class="main-statistics d-flex">
+                    <div class="tabularList">
+                        <table class="table">
+                            <thead class="table-header">
+                                <tr class="table-row">
+                                    <th class="t-head">No</th>
+                                    <th class="t-head">Product Name</th>
+                                    <th class="t-head">Status</th>
+                                    <th class="t-head">Sold</th>
+                                    <th class="t-head">View</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr class="table-row">
+                                    <td class="t-data">1</td>
+                                    <td class="t-data">
+                                        <figure class="d-flex align-items-center">
+                                            <img src="../assets/images/10.jpg" alt="pdt-1" class="pdt-name-avatar table-img-mr">
+                                            <small> News mobile App UI Kit...</small>
+                                        </figure>
+                                    </td>
+                                    <td class="t-data">Active</td>
+                                    <td class="t-data">10</td>
+                                    <td class="t-data">320</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="t-data">2</td>
+                                    <td class="t-data">
+                                        <figure class="d-flex align-items-center">
+                                            <img src="../assets/images/5400457.jpg" alt="pdt-2" class="pdt-name-avatar table-img-mr">
+                                            <small> 40+ Landing Page Temp...</small>
+                                        </figure>
+                                    </td>
+                                    <td class="t-data">Active</td>
+                                    <td class="t-data">10</td>
+                                    <td class="t-data">320</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="t-data">3</td>
+                                    <td class="t-data">
+                                        <figure class="d-flex align-items-center">
+                                            <img src="../assets/images/5400481.jpg" alt="pdt-3" class="pdt-name-avatar table-img-mr">
+                                            <small> Doctor Consultant UI Kit...</small>
+                                        </figure>
+                                    </td>
+                                    <td class="t-data">Active</td>
+                                    <td class="t-data">10</td>
+                                    <td class="t-data">320</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="t-data">4</td>
+                                    <td class="t-data">
+                                        <figure class="d-flex align-items-center">
+                                            <img src="../assets/images/5401097.jpg" alt="pdt-4" class="pdt-name-avatar table-img-mr">
+                                            <small> Startup Illustration Kit Ve...</small>
+                                        </figure>
+                                    </td>
+                                    <td class="t-data">Active</td>
+                                    <td class="t-data">10</td>
+                                    <td class="t-data">320</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="statisticData d-flex ">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </section>
+                <!-- table section : End-->
+
+            </main>
+            <!-- Main Section : End -->
+        </div>
+        <!-- Main Content: End -->
+    </div>
+    <!-- Wrapper Class: End -->
+</body>
+
+</html>

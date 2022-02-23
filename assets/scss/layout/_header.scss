@@ -1,0 +1,18 @@
+// Header area style
+.topNav{
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    
+
+    .topNav-Container1{
+        border: 1px solid red;
+        margin: 0 35px;
+    } 
+
+    .topNav-Container2{
+        border: 1px solid navy;
+        margin: 0 35px;
+    }
+}

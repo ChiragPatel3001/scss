@@ -1,0 +1,19 @@
+// Card styles goes here
+.cards{
+    justify-content: space-between;
+   
+    .card{
+        width: 25%;
+        border: 1px solid salmon;
+        height: 250px;
+        margin: 20px 10px ;
+        margin-bottom: 0;
+    }
+    .card1{
+        margin-left: 0;
+    }
+    .card4{
+        margin-right: 0;
+    }
+}
+

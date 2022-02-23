@@ -1,0 +1,45 @@
+// Global styles goes here
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-dir-column {
+    flex-direction: column;
+}
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.li-style-none {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.table-img-mr {
+    margin-right: 0.5rem;
+}
+
+.border-radius {
+    border-radius: $global-borderRadius;
+}
