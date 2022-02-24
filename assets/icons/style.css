@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?mm5j7d');
-  src:  url('fonts/app.eot?mm5j7d#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?mm5j7d') format('truetype'),
-    url('fonts/app.woff?mm5j7d') format('woff'),
-    url('fonts/app.svg?mm5j7d#app') format('svg');
+  src:  url('fonts/app.eot?ijcy61');
+  src:  url('fonts/app.eot?ijcy61#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?ijcy61') format('truetype'),
+    url('fonts/app.woff?ijcy61') format('woff'),
+    url('fonts/app.svg?ijcy61#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-eye:before {
+  content: "\e90a";
+  color: #438ffe;
+}
+.icon-greenGraph:before {
+  content: "\e90b";
+  color: #8dc48c;
+}
+.icon-redGraph:before {
+  content: "\e90c";
+  color: #fe754b;
+}
+.icon-shoppingBag:before {
+  content: "\e90d";
+  color: #8bc38a;
+}
+.icon-People:before {
+  content: "\e90e";
+  color: #438ffe;
+}
+.icon-shoppingCart:before {
+  content: "\e90f";
+  color: #83bcbd;
+}
+.icon-Search:before {
+  content: "\e909";
+  color: #b7bbc8;
+}
 .icon-Error:before {
   content: "\e900";
   color: #b7bbc8;
@@ -60,4 +88,7 @@
 .icon-Settings:before {
   content: "\e908";
   color: #b7bbc8;
+}
+.icon-Toggle:before {
+  content: "\ea42";
 }

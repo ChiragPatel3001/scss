@@ -2,22 +2,43 @@
     width: 60%;
     margin-right: 20px;
     height: 100%;
+    padding: 20px;
+    background-color: white;
 
     .table{
         border-collapse: collapse;
         width: 100%;
         text-align: center;
+        // background-color: white;
+        // padding: 30px;
 
+        .table-row{
+            background-color: $main-bg;
+            border-bottom: 15px solid white;
+            
+        }
         .t-head{
-            padding: 10px;
+            padding: 5px;
+            padding-bottom: 10px;
         }
 
         .t-data{
             padding: 10px;
+            margin: 5px 0;
         }
+        
+        .t-img{
+            padding: 10px 0;
+        }
+
         .pdt-name-avatar {
             width: 40px;
             height: 40px;
+        }
+        
+        .Active{
+            color: $primary;
+            cursor: pointer;
         }
     }
 }

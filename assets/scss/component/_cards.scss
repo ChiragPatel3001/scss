@@ -1,19 +1,77 @@
 // Card styles goes here
 .cards{
-    justify-content: space-between;
+    // justify-content: space-between;
+    margin: 0 -10px;
    
     .card{
         width: 25%;
-        border: 1px solid salmon;
         height: 250px;
         margin: 20px 10px ;
         margin-bottom: 0;
-    }
-    .card1{
-        margin-left: 0;
-    }
-    .card4{
-        margin-right: 0;
+        background-color: $primary-content-bg;
+        // background-color: turquoise;
+        padding: 20px;
+
+        .leftIcon{
+            padding: 15px;
+            background-color: #edf4ff;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 550;
+            padding: 5px 0;
+        }
+
+        h3{
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 5px 0;
+            color: #b6bbc7;
+        }
     }
 }
+
+.card-icons{
+    justify-content: space-between;
+    padding: 5px 0;
+
+    .icon-eye{
+        font-size: $card-icon-fontSize;
+    }
+    
+    .icon-shoppingBag{
+        font-size: $card-icon-fontSize;
+    }    
+
+    .icon-People{
+        font-size: $card-icon-fontSize;
+    }
+
+    .icon-shoppingCart{
+        font-size: $card-icon-fontSize;
+    }
+        
+    .icon-greenGraph{
+        font-size: $card-icon-fontSize;
+    }
+    .icon-redGraph{
+        font-size: $card-icon-fontSize;
+    }
+}
+
+.card-desc{
+    padding: 10px 0;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.card-footer{
+    padding-top: 10px;
+    color: #b6bbc7;
+    
+    .new-pdt{
+        color: $primary;
+        cursor: pointer;
+    }
+}
+
 

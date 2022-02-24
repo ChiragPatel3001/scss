@@ -1,0 +1,17 @@
+.searchbar {
+    padding-left: 40px;
+    position: relative;
+
+    #search {
+        position: absolute;
+        padding: 12px 15px;
+
+        .icon-Search {
+            font-size: 1.5rem;
+        }
+    }
+    input {
+        height: 50px;
+        width: 500px;
+    }
+}

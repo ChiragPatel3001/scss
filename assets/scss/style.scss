@@ -19,32 +19,37 @@
 .main-content{
     height: 100%;
     flex-direction: row;
+    background-color: $main-bg;
     
     // Main Content
     .main{
-        margin: 40px 35px 0 35px;
-        border: 1px solid gold;
+        padding: 40px;
+        // border: 1px solid gold;
         height: 100%;
         width: 100%;
         flex-grow: 1;
+        background-color: $main-bg;
     }
 }
 
 //Content
 .main-cards{
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 
 // Statistics Section
 .main-statistics{
-    border: 1px solid palevioletred;
+    // border: 1px solid palevioletred;
     justify-content: space-between;
-    margin: 30px 0;
+    margin-top: 30px;
+    height: 100%;
     
     .tabularList{
-        border: 1px solid black;
+        // border: 1px solid black;
     }
     .statisticData{
-        border: 1px solid darkblue;
+        // border: 1px solid darkblue;
+        width: 40%;
+        background-color: white;
     }
 }

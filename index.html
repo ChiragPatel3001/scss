@@ -18,13 +18,19 @@
         <div class="topNav d-flex">
             <div class="topNav-Container1 d-flex align-items-center">
                 <span class="icon-Logo"></span>
-                <input type="search" id="search" name="search" placeholder="Search for Transaction,Item,etc">
-                <input type="submit">
+                <div class="searchbar">
+                    <label id="search" for="search"><span class="icon-Search"></span></label>
+                    <input type="search" id="searchbar" name="search" placeholder="Search for transaction,item,etc">
+                </div>
+                <div class="searchButton">
+                    <button class="search-btn">Search</button>
+                </div>
             </div>
             <div class="topNav-Container2 d-flex align-items-center">
                 <span class="icon-Message"></span>
                 <span class="icon-Bell"></span>
-                <figure><img class="avatar" src="../assets/images/johnny-bravo-pin-india.jpg" alt="ProfileIcon">
+                <figure><img class="avatar" src="../assets/images/johnny-bravo-classic-badge-india.jpg"
+                        alt="ProfileIcon">
                 </figure>
             </div>
         </div>
@@ -33,6 +39,7 @@
 
         <!-- Main Content: Start -->
         <div class="main-content d-flex">
+            <!-- <input type="checkbox" id="sidebar-toggle"> -->
             <!-- Sidebar : Start -->
             <aside class="sidebar d-flex f-dir-column">
 
@@ -53,6 +60,9 @@
                 </ul>
                 <!-- SideBar Bottom: End -->
 
+                <!-- SideBar Toggle : label Start-->
+                <!-- <label id="toggle" for="sidebar-toggle"><span class="icon-Toggle"></span></label> -->
+                <!-- SideBar Toggle : label End -->
             </aside>
             <!-- Sidebar : End -->
 
@@ -65,10 +75,86 @@
                         <h1>Dashboard</h1>
                     </div>
                     <div class="cards d-flex">
-                        <div class="card card1"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card card4"></div>
+                        <!-- card 1 : Start -->
+                        <div class="card d-flex f-dir-column">
+                            <div class="card-icons d-flex">
+                                <div class="leftIcon">
+                                    <label for="card-icon" class="icon-eye"></label>
+                                </div>
+                                <div class="rightIcon">
+                                    <label for="chart-line-icon" class="icon-greenGraph"></label>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Total Views</h3>
+                                <p>308.402</p>
+                            </div>
+                            <div class="card-footer">
+                                <span>Start from 1 Jan 2021</span>
+                            </div>
+                        </div>
+                        <!-- card 1 : End -->
+
+                         <!-- card 2 : Start -->
+                        <div class="card d-flex f-dir-column">
+                            <div class="card-icons d-flex">
+                                <div class="leftIcon">
+                                    <label for="card-icon" class="icon-shoppingBag"></label>
+                                </div>
+                                <div class="rightIcon">
+                                    <label for="chart-line-icon" class="icon-redGraph"></label>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Total Products</h3>
+                                <p>10.820</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="new-pdt">+ Add new Products</span>
+                            </div>
+                        </div>
+                        <!-- card 2 : End -->
+
+                         <!-- card 3 : Start -->
+                        <div class="card d-flex f-dir-column">
+                            <div class="card-icons d-flex">
+                                <div class="leftIcon">
+                                    <label for="card-icon" class="icon-People"></label>
+                                </div>
+                                <div class="rightIcon">
+                                    <label for="chart-line-icon" class="icon-greenGraph"></label>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Total Users</h3>
+                                <p>8.425</p>
+                            </div>
+                            <div class="card-footer">
+                                <span>Newsletter noted every week</span>
+                            </div>
+                        </div>
+                        <!-- card 3 : End -->
+
+                        <!-- card 4 : Start -->
+                        <div class="card d-flex f-dir-column">
+                            <div class="card-icons d-flex">
+                                <div class="leftIcon">
+                                    <label for="card-icon" class="icon-shoppingCart"></label>
+                                </div>
+                                <div class="rightIcon">
+                                    <label for="chart-line-icon" class="icon-greenGraph"></label>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Total Sells</h3>
+                                <p>1.028.623</p>
+                            </div>
+                            <div class="card-footer">
+                                <span>Start from 1 Jan 2021</span>
+                            </div>
+                        </div>
+                        <!-- card 4 : End -->
+
                     </div>
                 </section>
                 <!-- cards Section : End-->
@@ -79,8 +165,9 @@
                     <div class="tabularList">
                         <table class="table">
                             <thead class="table-header">
-                                <tr class="table-row">
+                                <tr class="table-headings">
                                     <th class="t-head">No</th>
+                                    <th></th>
                                     <th class="t-head">Product Name</th>
                                     <th class="t-head">Status</th>
                                     <th class="t-head">Sold</th>
@@ -90,49 +177,61 @@
                             <tbody class="table-body">
                                 <tr class="table-row">
                                     <td class="t-data">1</td>
-                                    <td class="t-data">
-                                        <figure class="d-flex align-items-center">
-                                            <img src="../assets/images/10.jpg" alt="pdt-1" class="pdt-name-avatar table-img-mr">
-                                            <small> News mobile App UI Kit...</small>
+                                    <td class="t-img">
+                                        <figure class="">
+                                            <img src="../assets/images/10.jpg" alt="pdt-1"
+                                                class="pdt-name-avatar table-img-mr">
                                         </figure>
                                     </td>
-                                    <td class="t-data">Active</td>
+                                    <td class="t-data">
+                                            <small> News mobile App UI Kit...</small>
+                                    </td>
+                                    <td class="t-data Active">Active</td>
                                     <td class="t-data">10</td>
                                     <td class="t-data">320</td>
                                 </tr>
                                 <tr class="table-row">
                                     <td class="t-data">2</td>
-                                    <td class="t-data">
-                                        <figure class="d-flex align-items-center">
-                                            <img src="../assets/images/5400457.jpg" alt="pdt-2" class="pdt-name-avatar table-img-mr">
-                                            <small> 40+ Landing Page Temp...</small>
+                                    <td class="t-img">
+                                        <figure class="">
+                                            <img src="../assets/images/5400457.jpg" alt="pdt-2"
+                                                class="pdt-name-avatar table-img-mr">
                                         </figure>
                                     </td>
-                                    <td class="t-data">Active</td>
+                                    <td class="t-data">
+                                            <small> 40+ Landing Page Temp...</small>
+                                    </td>
+                                    <td class="t-data Active">Active</td>
                                     <td class="t-data">10</td>
                                     <td class="t-data">320</td>
                                 </tr>
                                 <tr class="table-row">
                                     <td class="t-data">3</td>
-                                    <td class="t-data">
-                                        <figure class="d-flex align-items-center">
-                                            <img src="../assets/images/5400481.jpg" alt="pdt-3" class="pdt-name-avatar table-img-mr">
-                                            <small> Doctor Consultant UI Kit...</small>
+                                    <td class="t-img">
+                                        <figure class="">
+                                            <img src="../assets/images/5400481.jpg" alt="pdt-3"
+                                                class="pdt-name-avatar table-img-mr">
                                         </figure>
                                     </td>
-                                    <td class="t-data">Active</td>
+                                    <td class="t-data">
+                                            <small> Doctor Consultant UI Kit...</small>
+                                    </td>
+                                    <td class="t-data Active">Active</td>
                                     <td class="t-data">10</td>
                                     <td class="t-data">320</td>
                                 </tr>
                                 <tr class="table-row">
                                     <td class="t-data">4</td>
-                                    <td class="t-data">
-                                        <figure class="d-flex align-items-center">
-                                            <img src="../assets/images/5401097.jpg" alt="pdt-4" class="pdt-name-avatar table-img-mr">
-                                            <small> Startup Illustration Kit Ve...</small>
+                                    <td class="t-img">
+                                        <figure class="">
+                                            <img src="../assets/images/5401097.jpg" alt="pdt-4"
+                                                class="pdt-name-avatar table-img-mr">
                                         </figure>
                                     </td>
-                                    <td class="t-data">Active</td>
+                                    <td class="t-data">
+                                            <small> Startup Illustration Kit Ve...</small>
+                                    </td>
+                                    <td class="t-data Active">Active</td>
                                     <td class="t-data">10</td>
                                     <td class="t-data">320</td>
                                 </tr>

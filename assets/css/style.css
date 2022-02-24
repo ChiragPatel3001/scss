@@ -44,39 +44,121 @@ img {
   height: auto;
 }
 
-.table-img-mr {
-  margin-right: 0.5rem;
-}
-
 .border-radius {
   border-radius: 5px;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+.search-btn {
+  height: 50px;
+  padding: 0 30px;
+  background-color: #438ffe;
+  color: white;
+  border: none;
+}
+
+.searchbar {
+  padding-left: 40px;
+  position: relative;
+}
+
+.searchbar #search {
+  position: absolute;
+  padding: 12px 15px;
+}
+
+.searchbar #search .icon-Search {
+  font-size: 1.5rem;
+}
+
+.searchbar input {
+  height: 50px;
+  width: 500px;
+}
+
 .cards {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 -10px;
 }
 
 .cards .card {
   width: 25%;
-  border: 1px solid salmon;
   height: 250px;
   margin: 20px 10px;
   margin-bottom: 0;
+  background-color: white;
+  padding: 20px;
 }
 
-.cards .card1 {
-  margin-left: 0;
+.cards .card .leftIcon {
+  padding: 15px;
+  background-color: #edf4ff;
 }
 
-.cards .card4 {
-  margin-right: 0;
+.cards .card p {
+  font-size: 2rem;
+  font-weight: 550;
+  padding: 5px 0;
+}
+
+.cards .card h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 0;
+  color: #b6bbc7;
+}
+
+.card-icons {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+
+.card-icons .icon-eye {
+  font-size: 3rem;
+}
+
+.card-icons .icon-shoppingBag {
+  font-size: 3rem;
+}
+
+.card-icons .icon-People {
+  font-size: 3rem;
+}
+
+.card-icons .icon-shoppingCart {
+  font-size: 3rem;
+}
+
+.card-icons .icon-greenGraph {
+  font-size: 3rem;
+}
+
+.card-icons .icon-redGraph {
+  font-size: 3rem;
+}
+
+.card-desc {
+  padding: 10px 0;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.card-footer {
+  padding-top: 10px;
+  color: #b6bbc7;
+}
+
+.card-footer .new-pdt {
+  color: #438ffe;
+  cursor: pointer;
 }
 
 .avatar {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   overflow: hidden;
   -ms-flex-negative: 0;
@@ -87,6 +169,8 @@ img {
   width: 60%;
   margin-right: 20px;
   height: 100%;
+  padding: 20px;
+  background-color: white;
 }
 
 .tabularList .table {
@@ -95,12 +179,23 @@ img {
   text-align: center;
 }
 
+.tabularList .table .table-row {
+  background-color: #f8f8f8;
+  border-bottom: 15px solid white;
+}
+
 .tabularList .table .t-head {
-  padding: 10px;
+  padding: 5px;
+  padding-bottom: 10px;
 }
 
 .tabularList .table .t-data {
   padding: 10px;
+  margin: 5px 0;
+}
+
+.tabularList .table .t-img {
+  padding: 10px 0;
 }
 
 .tabularList .table .pdt-name-avatar {
@@ -108,46 +203,74 @@ img {
   height: 40px;
 }
 
+.tabularList .table .Active {
+  color: #438ffe;
+  cursor: pointer;
+}
+
 .topNav {
-  border: 1px solid black;
   height: 100px;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
+  border-bottom: 2px solid #f8f8f8;
 }
 
-.topNav .topNav-Container1 {
-  border: 1px solid red;
-  margin: 0 35px;
+.topNav .topNav-Container1 .icon-Logo {
+  font-size: 1.5rem;
+  padding: 0 33px;
 }
 
-.topNav .topNav-Container2 {
-  border: 1px solid navy;
-  margin: 0 35px;
+.topNav .topNav-Container1 .searchButton {
+  padding: 25px 0;
+}
+
+.topNav .topNav-Container1 #searchbar {
+  padding-left: 60px;
+  background-color: #f5f7f9;
+  border: none;
+}
+
+.topNav .topNav-Container2 span {
+  font-size: 1.5rem;
+  padding-right: 50px;
+}
+
+.topNav .topNav-Container2 figure {
+  padding-right: 40px;
 }
 
 .sidebar {
-  border: 1px solid black;
-  width: 5%;
+  width: 100px;
   height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  background-color: white;
 }
 
-.sidebar-top {
-  border: 1px solid brown;
+.sidebar .sidebar-top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.sidebar-bottom {
-  border: 1px solid blue;
+.sidebar .sidebar-bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 80px;
+}
+
+li {
+  font-size: 1.5rem;
+  padding: 25px 0;
 }
 
 .main-content {
@@ -156,35 +279,29 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #f8f8f8;
 }
 
 .main-content .main {
-  margin: 40px 35px 0 35px;
-  border: 1px solid gold;
+  padding: 40px;
   height: 100%;
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-.main-cards {
-  border: 1px solid green;
+  background-color: #f8f8f8;
 }
 
 .main-statistics {
-  border: 1px solid palevioletred;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 0;
-}
-
-.main-statistics .tabularList {
-  border: 1px solid black;
+  margin-top: 30px;
+  height: 100%;
 }
 
 .main-statistics .statisticData {
-  border: 1px solid darkblue;
+  width: 40%;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

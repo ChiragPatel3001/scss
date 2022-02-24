@@ -1,18 +1,37 @@
 // Header area style
 .topNav{
-    border: 1px solid black;
+    // border: 1px solid black;
     height: 100px;
     width: 100%;
     justify-content: space-between;
+    background-color: $primary-content-bg;
+    border-bottom: 2px solid $main-bg;
     
 
     .topNav-Container1{
-        border: 1px solid red;
-        margin: 0 35px;
+        // border: 1px solid red;
+        .icon-Logo{
+            font-size: 1.5rem;
+            padding: 0 33px;
+        }
+        .searchButton{
+            padding: 25px 0;
+        }
+        #searchbar{
+            padding-left: 60px;
+            background-color: #f5f7f9;
+            border: none;
+        }
     } 
 
     .topNav-Container2{
-        border: 1px solid navy;
-        margin: 0 35px;
+        // border: 1px solid navy;
+        span{
+            font-size: 1.5rem;
+            padding-right: 50px;
+        }
+        figure{
+            padding-right: 40px;
+        }
     }
 }
