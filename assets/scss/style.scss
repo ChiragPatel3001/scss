@@ -1,11 +1,6 @@
 // Project base and component style import
 @import 'base/index';
 
-// Vendor base and component style import
-// @import 'vendor/bootstrap-base';
-
-// @import 'vendor/bootstrap-components';
-
 // Project Specific Components
 @import 'component/index';
 
@@ -14,42 +9,3 @@
 
 @import 'utilities/index';
 
-
-//Sidebar and Main Content Container 
-.main-content{
-    height: 100%;
-    flex-direction: row;
-    background-color: $main-bg;
-    
-    // Main Content
-    .main{
-        padding: 40px;
-        // border: 1px solid gold;
-        height: 100%;
-        width: 100%;
-        flex-grow: 1;
-        background-color: $main-bg;
-    }
-}
-
-//Content
-.main-cards{
-    // border: 1px solid green;
-}
-
-// Statistics Section
-.main-statistics{
-    // border: 1px solid palevioletred;
-    justify-content: space-between;
-    margin-top: 30px;
-    height: 100%;
-    
-    .tabularList{
-        // border: 1px solid black;
-    }
-    .statisticData{
-        // border: 1px solid darkblue;
-        width: 40%;
-        background-color: white;
-    }
-}

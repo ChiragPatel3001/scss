@@ -19,8 +19,8 @@
             <div class="topNav-Container1 d-flex align-items-center">
                 <span class="icon-Logo"></span>
                 <div class="searchbar">
-                    <label id="search" for="search"><span class="icon-Search"></span></label>
-                    <input type="search" id="searchbar" name="search" placeholder="Search for transaction,item,etc">
+                    <label id="search" for="searchBar"><span class="icon-Search"></span></label>
+                    <input type="search" id="searchBar" name="search" class="search-bar" placeholder="Search for transaction,item,etc">
                 </div>
                 <div class="searchButton">
                     <button class="search-btn">Search</button>
@@ -39,32 +39,34 @@
 
         <!-- Main Content: Start -->
         <div class="main-content d-flex">
-            <!-- <input type="checkbox" id="sidebar-toggle"> -->
+            <!-- <div class="sidebar-container"> -->
+            <input type="checkbox" id="sidebar-toggle">
             <!-- Sidebar : Start -->
             <aside class="sidebar d-flex f-dir-column">
 
                 <!-- SideBar Top : Start-->
-                <ul class="sidebar-top li-style-none d-flex f-dir-column">
-                    <li class="icon-Grid"></li>
-                    <li class="icon-cart"></li>
-                    <li class="icon-File"></li>
-                    <li class="icon-Settings"></li>
+                <ul class="sidebar-top d-flex f-dir-column">
+                    <li><a href="#" class="icon-Grid"></a></li>
+                    <li><a href="#" class="icon-cart"></a></li>
+                    <li><a href="#" class="icon-File"></a></li>
+                    <li><a href="#" class="icon-Settings"></a></li>
                 </ul>
                 <!-- SideBar Top : End-->
 
 
                 <!-- SideBar Bottom: Start -->
-                <ul class="sidebar-bottom li-style-none d-flex f-dir-column">
-                    <li class="icon-Error"></li>
-                    <li class="icon-Exit"></li>
+                <ul class="sidebar-bottom d-flex f-dir-column">
+                    <li><a href="#" class="icon-Error"></a></li>
+                    <li><a href="#" class="icon-Exit"></a></li>
                 </ul>
                 <!-- SideBar Bottom: End -->
 
                 <!-- SideBar Toggle : label Start-->
-                <!-- <label id="toggle" for="sidebar-toggle"><span class="icon-Toggle"></span></label> -->
                 <!-- SideBar Toggle : label End -->
             </aside>
+            <label class="toggle" for="sidebar-toggle"><span class="icon-Toggle"></span></label>
             <!-- Sidebar : End -->
+        <!-- </div> -->
 
             <!-- Main Section : Start -->
             <main class="main d-flex f-dir-column">
@@ -78,7 +80,7 @@
                         <!-- card 1 : Start -->
                         <div class="card d-flex f-dir-column">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon">
+                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-1">
                                     <label for="card-icon" class="icon-eye"></label>
                                 </div>
                                 <div class="rightIcon">
@@ -98,7 +100,7 @@
                          <!-- card 2 : Start -->
                         <div class="card d-flex f-dir-column">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon">
+                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-2">
                                     <label for="card-icon" class="icon-shoppingBag"></label>
                                 </div>
                                 <div class="rightIcon">
@@ -118,7 +120,7 @@
                          <!-- card 3 : Start -->
                         <div class="card d-flex f-dir-column">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon">
+                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-3">
                                     <label for="card-icon" class="icon-People"></label>
                                 </div>
                                 <div class="rightIcon">
@@ -138,7 +140,7 @@
                         <!-- card 4 : Start -->
                         <div class="card d-flex f-dir-column">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon">
+                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-4">
                                     <label for="card-icon" class="icon-shoppingCart"></label>
                                 </div>
                                 <div class="rightIcon">

@@ -1,77 +1,86 @@
 // Card styles goes here
-.cards{
-    // justify-content: space-between;
+.cards {
     margin: 0 -10px;
-   
-    .card{
-        width: 25%;
-        height: 250px;
-        margin: 20px 10px ;
-        margin-bottom: 0;
-        background-color: $primary-content-bg;
-        // background-color: turquoise;
-        padding: 20px;
 
-        .leftIcon{
-            padding: 15px;
-            background-color: #edf4ff;
+    .card {
+        width: $card-width;
+        height: $card-height;
+        margin: $card-margin;
+        background-color: $primary-content-bg;
+        padding: $card-inner-padding;
+
+        .lft-Icon-1 {
+            background-color: $card-iconPrimary-bg;
         }
-        p{
+        .lft-Icon-2 {
+            background-color: $card-iconSecondary-bg;
+        }
+        .lft-Icon-3 {
+            background-color: $card-iconPrimary-bg;
+        }
+        .lft-Icon-4 {
+            background-color: $card-iconTertiary-bg;
+        }
+
+        .leftIcon {
+            height: 60px;
+            width: 60px;
+        }
+        p {
             font-size: 2rem;
             font-weight: 550;
-            padding: 5px 0;
+            padding: $card-content-padding;
+            color: $accent;
         }
 
-        h3{
+        h3 {
             font-size: 1rem;
             font-weight: 400;
-            padding: 5px 0;
-            color: #b6bbc7;
+            padding: $card-content-padding;
+            color: $card-text-color;
         }
     }
 }
 
-.card-icons{
+.card-icons {
     justify-content: space-between;
-    padding: 5px 0;
+    padding: $card-content-padding;
 
-    .icon-eye{
-        font-size: $card-icon-fontSize;
-    }
-    
-    .icon-shoppingBag{
-        font-size: $card-icon-fontSize;
-    }    
-
-    .icon-People{
+    .icon-eye {
         font-size: $card-icon-fontSize;
     }
 
-    .icon-shoppingCart{
+    .icon-shoppingBag {
         font-size: $card-icon-fontSize;
     }
-        
-    .icon-greenGraph{
+
+    .icon-People {
         font-size: $card-icon-fontSize;
     }
-    .icon-redGraph{
+
+    .icon-shoppingCart {
+        font-size: $card-icon-fontSize;
+    }
+
+    .icon-greenGraph {
+        font-size: $card-icon-fontSize;
+    }
+    .icon-redGraph {
         font-size: $card-icon-fontSize;
     }
 }
 
-.card-desc{
+.card-desc {
     padding: 10px 0;
-    border-bottom: 2px solid #e2e2e2;
+    border-bottom: 1px solid $card-text-color;
 }
 
-.card-footer{
+.card-footer {
     padding-top: 10px;
-    color: #b6bbc7;
-    
-    .new-pdt{
+    color: $card-text-color;
+
+    .new-pdt {
         color: $primary;
         cursor: pointer;
     }
 }
-
-

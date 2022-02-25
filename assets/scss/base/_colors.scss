@@ -4,13 +4,11 @@ $primary: #438ffe;
 // Mainly use for UI controls like Buttons
 $secondary: #b7bbc8;
 
-
 // Mainly use for Normal Text color
 $gray: #b5b6ba;
 
-// Additional Shades of gray color
-$light: #f8fafc;
-$extra-light: #fcfcfc;
+//Mainly for the Text
+$accent: #160e4d;
 
 //Main background
 $main-bg: #f8f8f8;
@@ -25,5 +23,23 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "gray": $gray,
-  "light": $light,
+  "accent": $accent,
 );
+
+
+//searchbar 
+$searchbar-bg: #f5f7f9;
+
+//cards
+$card-iconPrimary-bg: #edf4ff;
+$card-iconSecondary-bg: #f4f9f4; 
+$card-iconTertiary-bg: #f3f9f9; 
+
+$card-text-color: #b6bbc7;
+
+$card-icon-container: (
+  "Icon-primary-bg": $card-iconPrimary-bg,
+  "Icon-secondary-bg":$card-iconSecondary-bg,
+  "Icon-tertiary-bg":$card-iconTertiary-bg,
+)
+

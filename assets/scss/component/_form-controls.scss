@@ -1,17 +1,18 @@
 .searchbar {
-    padding-left: 40px;
-    position: relative;
-
+    margin-left: 40px;
+    background-color: $searchbar-bg;
+    display: flex;
+    align-items: center;
     #search {
-        position: absolute;
-        padding: 12px 15px;
 
         .icon-Search {
-            font-size: 1.5rem;
+            font-size: 1rem;
+            padding: 10px 10px 10px 20px;
+            cursor: pointer;
         }
     }
     input {
-        height: 50px;
-        width: 500px;
+        height: 36px;
+        width: 400px;
     }
 }

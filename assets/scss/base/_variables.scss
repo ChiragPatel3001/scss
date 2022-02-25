@@ -1,14 +1,14 @@
-// All the SCSS Variables goes here
-$primary-color: map-get($map: $theme-colors, $key: "primary");
-$danger-color: map-get($map: $theme-colors, $key: "danger");
-$border-color: map-get($map: $theme-colors, $key: "border");
-$light-text: map-get($map: $theme-colors, $key: "gray");
-
-$border-main: 1px solid $border-color;
-$border-radius: 8px;
-
-$header-height: 60px;
-$global-borderRadius: 5px;
+//button
+$btn-height: 36px;
+$btn-padding: 0 25px;
 
 //cards
-$card-icon-fontSize: 3rem;
+$card-icon-fontSize: 2rem;
+$card-height: 250px;
+$card-width: 25%;
+$card-margin: 20px 10px 0 10px;
+$card-inner-padding: 20px;
+$card-content-padding: 5px 0;
+
+//navbar
+$navbar-icon-size: 1.5rem;

@@ -1,8 +1,8 @@
 // Button styles goes here
 .search-btn{
-    height: 50px;
-    padding: 0 30px;
-    background-color: $primary;
-    color: white;
+    height: $btn-height;
+    padding: $btn-padding;
+    background-color: $btn-text-primary;
+    color: $primary-content-bg;
     border: none;
 }

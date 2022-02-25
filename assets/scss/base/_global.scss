@@ -27,8 +27,8 @@ html {
     align-items: center;
 }
 
-.li-style-none {
-    list-style: none;
+ul {
+    list-style-type: none;
 }
 
 img {
@@ -36,14 +36,7 @@ img {
     height: auto;
 }
 
-// .table-img-mr {
-//     margin-right: 0.5rem;
-// }
 
-.border-radius {
-    border-radius: $global-borderRadius;
-}
-
-h1{
-    font-size: 2rem;
+.justify-center{ 
+    justify-content: center;
 }

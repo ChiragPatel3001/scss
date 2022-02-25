@@ -4,13 +4,12 @@
     height: 100%;
     padding: 20px;
     background-color: white;
+    table-layout: fixed;
 
     .table{
         border-collapse: collapse;
         width: 100%;
         text-align: center;
-        // background-color: white;
-        // padding: 30px;
 
         .table-row{
             background-color: $main-bg;
@@ -40,5 +39,6 @@
             color: $primary;
             cursor: pointer;
         }
+        
     }
 }
