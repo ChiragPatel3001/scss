@@ -9,6 +9,7 @@
     .sidebar-top{
         align-items: center;
         flex-grow: 1;
+        overflow-y: auto;
     }
     
     .sidebar-bottom{
@@ -32,10 +33,19 @@ a{
 
 .toggle{
     position: absolute;
-    top: 50%;
-    left: 100px;
+    top: 46%;
+    left: 85px;
     font-size: 2rem;
     transition: all 0.4s ease;
+    padding-left: 8px;
+    color: $primary;
+    // background: #fff;
+    // padding: 5px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // cursor: pointer;
+    // box-shadow: 3px 0px 5px #0000001c;
 }
 #sidebar-toggle:checked ~ .sidebar{
     width: 0;

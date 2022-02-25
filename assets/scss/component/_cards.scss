@@ -8,21 +8,11 @@
         margin: $card-margin;
         background-color: $primary-content-bg;
         padding: $card-inner-padding;
+        transition: 0.3s all;
 
-        .lft-Icon-1 {
-            background-color: $card-iconPrimary-bg;
-        }
-        .lft-Icon-2 {
-            background-color: $card-iconSecondary-bg;
-        }
-        .lft-Icon-3 {
-            background-color: $card-iconPrimary-bg;
-        }
-        .lft-Icon-4 {
-            background-color: $card-iconTertiary-bg;
-        }
 
-        .leftIcon {
+
+        .icon {
             height: 60px;
             width: 60px;
         }
@@ -30,14 +20,14 @@
             font-size: 2rem;
             font-weight: 550;
             padding: $card-content-padding;
-            color: $accent;
+            // color: $accent;
         }
 
         h3 {
             font-size: 1rem;
             font-weight: 400;
             padding: $card-content-padding;
-            color: $card-text-color;
+            // color: $card-text-color;
         }
     }
 }
@@ -77,10 +67,11 @@
 
 .card-footer {
     padding-top: 10px;
-    color: $card-text-color;
+    // color: $card-text-color;
 
     .new-pdt {
         color: $primary;
         cursor: pointer;
     }
 }
+

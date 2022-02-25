@@ -4,9 +4,6 @@ $primary: #438ffe;
 // Mainly use for UI controls like Buttons
 $secondary: #b7bbc8;
 
-// Mainly use for Normal Text color
-$gray: #b5b6ba;
-
 //Mainly for the Text
 $accent: #160e4d;
 
@@ -22,7 +19,6 @@ $btn-text-primary: $primary;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
-  "gray": $gray,
   "accent": $accent,
 );
 
@@ -35,11 +31,21 @@ $card-iconPrimary-bg: #edf4ff;
 $card-iconSecondary-bg: #f4f9f4; 
 $card-iconTertiary-bg: #f3f9f9; 
 
+$card-Secondary: #8bc38a;
+$card-Tertiary: #83bcbd;
+
 $card-text-color: #b6bbc7;
 
 $card-icon-container: (
   "Icon-primary-bg": $card-iconPrimary-bg,
   "Icon-secondary-bg":$card-iconSecondary-bg,
   "Icon-tertiary-bg":$card-iconTertiary-bg,
-)
+);
 
+
+$card-theme: (
+  "view": $primary,
+  "product": $card-Secondary,
+  "user": $primary,
+  "sells": $card-Tertiary,
+)

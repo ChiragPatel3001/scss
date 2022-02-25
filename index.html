@@ -20,7 +20,8 @@
                 <span class="icon-Logo"></span>
                 <div class="searchbar">
                     <label id="search" for="searchBar"><span class="icon-Search"></span></label>
-                    <input type="search" id="searchBar" name="search" class="search-bar" placeholder="Search for transaction,item,etc">
+                    <input type="search" id="searchBar" name="search" class="search-bar"
+                        placeholder="Search for transaction,item,etc">
                 </div>
                 <div class="searchButton">
                     <button class="search-btn">Search</button>
@@ -46,7 +47,7 @@
 
                 <!-- SideBar Top : Start-->
                 <ul class="sidebar-top d-flex f-dir-column">
-                    <li><a href="#" class="icon-Grid"></a></li>
+                    <li><a href="#" class="icon-Grid Active"></a></li>
                     <li><a href="#" class="icon-cart"></a></li>
                     <li><a href="#" class="icon-File"></a></li>
                     <li><a href="#" class="icon-Settings"></a></li>
@@ -66,7 +67,7 @@
             </aside>
             <label class="toggle" for="sidebar-toggle"><span class="icon-Toggle"></span></label>
             <!-- Sidebar : End -->
-        <!-- </div> -->
+            <!-- </div> -->
 
             <!-- Main Section : Start -->
             <main class="main d-flex f-dir-column">
@@ -78,10 +79,10 @@
                     </div>
                     <div class="cards d-flex">
                         <!-- card 1 : Start -->
-                        <div class="card d-flex f-dir-column">
+                        <div class="card d-flex f-dir-column card-view">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-1">
-                                    <label for="card-icon" class="icon-eye"></label>
+                                <div class="icon d-flex justify-center align-items-center lft-Icon-1">
+                                    <label for="card-icon" class="icon-eye card-icon"></label>
                                 </div>
                                 <div class="rightIcon">
                                     <label for="chart-line-icon" class="icon-greenGraph"></label>
@@ -97,11 +98,11 @@
                         </div>
                         <!-- card 1 : End -->
 
-                         <!-- card 2 : Start -->
-                        <div class="card d-flex f-dir-column">
+                        <!-- card 2 : Start -->
+                        <div class="card d-flex f-dir-column card-product">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-2">
-                                    <label for="card-icon" class="icon-shoppingBag"></label>
+                                <div class="icon d-flex justify-center align-items-center lft-Icon-2">
+                                    <label for="card-icon" class="icon-shoppingBag card-icon"></label>
                                 </div>
                                 <div class="rightIcon">
                                     <label for="chart-line-icon" class="icon-redGraph"></label>
@@ -117,11 +118,12 @@
                         </div>
                         <!-- card 2 : End -->
 
-                         <!-- card 3 : Start -->
-                        <div class="card d-flex f-dir-column">
+                        <!-- card 3 : Start -->
+                        <div class="card d-flex f-dir-column card-user">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-3">
-                                    <label for="card-icon" class="icon-People"></label>
+                                <div
+                                    class="icon d-flex justify-center align-items-center lft-Icon-3 card-icon-container">
+                                    <label for="card-icon" class="icon-People card-icon"></label>
                                 </div>
                                 <div class="rightIcon">
                                     <label for="chart-line-icon" class="icon-greenGraph"></label>
@@ -138,10 +140,10 @@
                         <!-- card 3 : End -->
 
                         <!-- card 4 : Start -->
-                        <div class="card d-flex f-dir-column">
+                        <div class="card d-flex f-dir-column card-sells">
                             <div class="card-icons d-flex">
-                                <div class="leftIcon d-flex justify-center align-items-center lft-Icon-4">
-                                    <label for="card-icon" class="icon-shoppingCart"></label>
+                                <div class="icon d-flex justify-center align-items-center lft-Icon-4">
+                                    <label for="card-icon" class="icon-shoppingCart card-icon"></label>
                                 </div>
                                 <div class="rightIcon">
                                     <label for="chart-line-icon" class="icon-greenGraph"></label>
@@ -169,7 +171,7 @@
                             <thead class="table-header">
                                 <tr class="table-headings">
                                     <th class="t-head">No</th>
-                                    <th></th>
+                                    <th class="t-head"></th>
                                     <th class="t-head">Product Name</th>
                                     <th class="t-head">Status</th>
                                     <th class="t-head">Sold</th>
@@ -237,9 +239,124 @@
                                     <td class="t-data">10</td>
                                     <td class="t-data">320</td>
                                 </tr>
+                                <tr class="table-row">
+                                    <td class="t-data">5</td>
+                                    <td class="t-img">
+                                        <figure class="">
+                                            <img src="../assets/images/5401097.jpg" alt="pdt-4"
+                                                class="pdt-name-avatar table-img-mr">
+                                        </figure>
+                                    </td>
+                                    <td class="t-data">
+                                            <small> Startup Illustration Kit Ve...</small>
+                                    </td>
+                                    <td class="t-data Active">Active</td>
+                                    <td class="t-data">10</td>
+                                    <td class="t-data">320</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="t-data">6</td>
+                                    <td class="t-img">
+                                        <figure class="">
+                                            <img src="../assets/images/5401097.jpg" alt="pdt-4"
+                                                class="pdt-name-avatar table-img-mr">
+                                        </figure>
+                                    </td>
+                                    <td class="t-data">
+                                            <small> Startup Illustration Kit Ve...</small>
+                                    </td>
+                                    <td class="t-data Active">Active</td>
+                                    <td class="t-data">10</td>
+                                    <td class="t-data">320</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <!-- Table -->
+                    <!-- <div class="tabularList overflow-hidden h-100 d-flex">
+                        <div class="table-wrapper d-flex f-dir-column overflow-hidden h-100">
+                            <div class="table-head">
+                                <table>
+                                    <thead class="table-header">
+                                        <tr class="table-headings">
+                                            <th class="t-head">No</th>
+                                            <th></th>
+                                            <th class="t-head">Product Name</th>
+                                            <th class="t-head">Status</th>
+                                            <th class="t-head">Sold</th>
+                                            <th class="t-head">View</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table-body flex-grow-1 overflow-vertical">
+                                <table>
+                                    <tbody class="table-body">
+                                        <tr class="table-row">
+                                            <td class="t-data">1</td>
+                                            <td class="t-img">
+                                                <figure class="">
+                                                    <img src="../assets/images/10.jpg" alt="pdt-1"
+                                                        class="pdt-name-avatar table-img-mr">
+                                                </figure>
+                                            </td>
+                                            <td class="t-data">
+                                                <small> News mobile App UI Kit...</small>
+                                            </td>
+                                            <td class="t-data Active">Active</td>
+                                            <td class="t-data">10</td>
+                                            <td class="t-data">320</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="t-data">2</td>
+                                            <td class="t-img">
+                                                <figure class="">
+                                                    <img src="../assets/images/5400457.jpg" alt="pdt-2"
+                                                        class="pdt-name-avatar table-img-mr">
+                                                </figure>
+                                            </td>
+                                            <td class="t-data">
+                                                <small> 40+ Landing Page Temp...</small>
+                                            </td>
+                                            <td class="t-data Active">Active</td>
+                                            <td class="t-data">10</td>
+                                            <td class="t-data">320</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="t-data">3</td>
+                                            <td class="t-img">
+                                                <figure class="">
+                                                    <img src="../assets/images/5400481.jpg" alt="pdt-3"
+                                                        class="pdt-name-avatar table-img-mr">
+                                                </figure>
+                                            </td>
+                                            <td class="t-data">
+                                                <small> Doctor Consultant UI Kit...</small>
+                                            </td>
+                                            <td class="t-data Active">Active</td>
+                                            <td class="t-data">10</td>
+                                            <td class="t-data">320</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="t-data">4</td>
+                                            <td class="t-img">
+                                                <figure class="">
+                                                    <img src="../assets/images/5401097.jpg" alt="pdt-4"
+                                                        class="pdt-name-avatar table-img-mr">
+                                                </figure>
+                                            </td>
+                                            <td class="t-data">
+                                                <small> Startup Illustration Kit Ve...</small>
+                                            </td>
+                                            <td class="t-data Active">Active</td>
+                                            <td class="t-data">10</td>
+                                            <td class="t-data">320</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="statisticData d-flex ">
                         <div></div>
                         <div></div>

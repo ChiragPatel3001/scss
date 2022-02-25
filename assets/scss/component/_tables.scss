@@ -1,10 +1,12 @@
 .tabularList{
     width: 60%;
     margin-right: 20px;
-    height: 100%;
-    padding: 20px;
-    background-color: white;
+    height: 450px;
+    padding: 0 20px;
+    background-color: $primary-content-bg;
     table-layout: fixed;
+    position: relative;
+    overflow: auto;
 
     .table{
         border-collapse: collapse;
@@ -13,12 +15,14 @@
 
         .table-row{
             background-color: $main-bg;
-            border-bottom: 15px solid white;
+            border-bottom: 15px solid $primary-content-bg;
             
         }
         .t-head{
-            padding: 5px;
-            padding-bottom: 10px;
+            padding: 20px 5px;
+            background-color: $primary-content-bg;
+            position: sticky;
+            top: 0;
         }
 
         .t-data{
@@ -34,11 +38,6 @@
             width: 40px;
             height: 40px;
         }
-        
-        .Active{
-            color: $primary;
-            cursor: pointer;
-        }
-        
+                
     }
 }

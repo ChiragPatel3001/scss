@@ -1,1 +1,17 @@
 // Function styles goes here
+@each $key, $value in $card-theme {
+    .card-#{$key}{
+         .icon{
+            background-color: lighten($color: $value, $amount: 30%);
+        }
+        .cards &:hover {
+            background-color: $value;
+            color: $primary-content-bg;
+
+            .new-pdt{
+                color: $primary-content-bg;
+            }
+        }
+
+        }
+    }
