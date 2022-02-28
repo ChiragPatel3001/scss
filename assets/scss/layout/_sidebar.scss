@@ -34,6 +34,10 @@ li{
 
 a{
     text-decoration: none;
+    
+    :hover{
+        color: $primary;
+    }
 }
 #sidebar-toggle{
     display: none;
@@ -63,11 +67,10 @@ a{
 }
 #sidebar-toggle:checked ~ .sidebar{
     width: 0;
+    .sidebar-icon{
+        transform: translateX(500px);
+    }
 }
-#sidebar-toggle:checked ~ .sidebar .sidebar-icon{
-    transform: translateX(500px);
-}
-
 #sidebar-toggle:checked ~ .toggle {
     left: 0;
 }

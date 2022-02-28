@@ -1,5 +1,5 @@
 // Header area style
-.topNav{
+.topNav {
     // border: 1px solid black;
     height: 80px;
     width: 100%;
@@ -8,56 +8,57 @@
     border-bottom: 2px solid $main-bg;
     flex-shrink: 0;
 
-    @include for-size(tablet-portrait-up){
+    @include for-size(tablet-portrait-up) {
         height: 70px;
     }
-    @include for-size(phone-only){
+    @include for-size(phone-only) {
         height: 70px;
     }
 
-    .topNav-Container1{
+    .topNav-Container1 {
         // border: 1px solid red;
-        .icon-Logo{
+        .icon-Logo {
             font-size: $navbar-icon-size;
             padding: 0 33px;
             cursor: pointer;
 
-            @include for-size(tablet-portrait-up){
+            @include for-size(tablet-portrait-up) {
                 padding: 0 24px;
             }
-            @include for-size(phone-only){
+            @include for-size(phone-only) {
                 padding: 0 16px;
             }
         }
-       
-        .search-bar{
+
+        .search-bar {
             background-color: $searchbar-bg;
             border: none;
             padding-left: 10px;
         }
-    } 
+    }
 
-    .topNav-Container2{
+    .topNav-Container2 {
         // border: 1px solid navy;
-        span{
+        span {
             font-size: $navbar-icon-size;
             padding-right: 30px;
+            cursor: pointer;
 
-            @include for-size(tablet-landscape-up){
-                    padding-right: 25px;
-                }
+            @include for-size(tablet-landscape-up) {
+                padding-right: 25px;
+            }
 
-                @include for-size( tablet-portrait-up){
-                    padding: 12px;
-                }
+            @include for-size(tablet-portrait-up) {
+                padding: 12px;
+            }
         }
-        figure{
+        figure {
             padding-right: 40px;
 
-            @include for-size( tablet-portrait-up){
+            @include for-size(tablet-portrait-up) {
                 padding-right: 24px;
             }
         }
-        
     }
 }
+

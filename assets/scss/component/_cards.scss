@@ -38,8 +38,8 @@
             font-size: 1rem;
             font-weight: 400;
             padding: $card-content-padding;
-            color: $secondary;
-            // color: $card-text-color;
+            color: $card-text-color;
+            // color: ;
 
         }
     }
@@ -80,7 +80,7 @@
 
 .card-footer {
     padding-top: 10px;
-    color: $secondary;
+    color: $card-text-color;
 
     .new-pdt {
         color: $primary;
