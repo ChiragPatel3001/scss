@@ -1,4 +1,4 @@
-.tabularList{
+.tabularList {
     width: 60%;
     margin-right: 20px;
     height: 450px;
@@ -8,29 +8,40 @@
     position: relative;
     overflow: auto;
 
-    .table{
-        border-collapse: collapse;
+    @include for-size(tablet-landscape-up) {
         width: 100%;
-        text-align: center;
+        margin-right: 0;
+    }
 
-        .table-row{
+    .table {
+        border-spacing: 0 1rem;
+        width: 100%;
+        text-align: left;
+
+        .table-row {
             background-color: $main-bg;
             border-bottom: 15px solid $primary-content-bg;
-            
         }
-        .t-head{
+        .t-head {
             padding: 20px 5px;
             background-color: $primary-content-bg;
             position: sticky;
             top: 0;
         }
 
-        .t-data{
-            padding: 10px;
+        .t-data {
+            padding: 10px 5px;
             margin: 5px 0;
+
+            div{
+                width: 160px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
-        
-        .t-img{
+
+        .t-img {
             padding: 10px 0;
         }
 
@@ -38,6 +49,5 @@
             width: 40px;
             height: 40px;
         }
-                
     }
 }

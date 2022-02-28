@@ -3,16 +3,39 @@
     background-color: $searchbar-bg;
     display: flex;
     align-items: center;
+
+    @include for-size( tablet-portrait-up){
+        margin-left: 24px;
+    }
     #search {
 
         .icon-Search {
             font-size: 1rem;
             padding: 10px 10px 10px 20px;
             cursor: pointer;
+
+            @include for-size( tablet-portrait-up){
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            @include for-size(phone-only){
+                padding-left: 4px;
+                padding-right: 0;
+            }
         }
     }
     input {
         height: 36px;
         width: 400px;
+
+        @include for-size(tablet-landscape-up){
+            width: 270px;
+        }
+        @include for-size(tablet-portrait-up){
+            width: 200px;
+        }
+        @include for-size(phone-only){
+            width: 160px;
+        }
     }
 }

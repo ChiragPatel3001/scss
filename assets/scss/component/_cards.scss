@@ -1,15 +1,26 @@
 // Card styles goes here
 .cards {
     margin: 0 -10px;
+    flex-wrap: wrap;
+
+    .card-wrapper{
+        width: $card-width;
+        transition: all 0.4s ease-out;
+        @include for-size(desktop-up) {
+            width: $card-width * 2;
+        }
+        
+        @include for-size(phone-only) {
+            width: $card-width * 4;
+        }
+    }
 
     .card {
-        width: $card-width;
         height: $card-height;
         margin: $card-margin;
         background-color: $primary-content-bg;
         padding: $card-inner-padding;
         transition: 0.3s all;
-
 
 
         .icon {
@@ -27,7 +38,9 @@
             font-size: 1rem;
             font-weight: 400;
             padding: $card-content-padding;
+            color: $secondary;
             // color: $card-text-color;
+
         }
     }
 }
@@ -67,11 +80,10 @@
 
 .card-footer {
     padding-top: 10px;
-    // color: $card-text-color;
+    color: $secondary;
 
     .new-pdt {
         color: $primary;
         cursor: pointer;
     }
 }
-
